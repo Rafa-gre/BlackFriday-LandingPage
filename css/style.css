@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    'left right'
+    'footer footer';
+   background-color: #002134;
+   font-family: 'Oswald', sans-serif;
+
+}
+footer{
+    grid-area: footer;
+    height: 10px;
+    padding: 25px;
+    text-align: center;
+    background-color: #002134;
+    color: blanchedalmond;
+}
+.section-one{
+    grid-area: left;
+    display: flex;
+    justify-content: center;   
+    
+}
+.section-two{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
+}
+.section-two h1{
+    margin-bottom: 25px;
+    color:white;
+    text-align: center;
+    font-size: xx-large;
+    
+    
+}
+.section-two h3{
+    width: 96%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color:white;
+    text-align: center;
+    align-items: center;
+
+}
+.section-two input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: start;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #d5dff1;
+    border-width: 2px;
+    background: #002134;
+    color: #d5dff1;
+    padding-left: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
+    outline: none;
+}
+::placeholder{
+    color: #d5dff1;
+    font-family: 'Oswald', sans-serif;
+
+}
+.section-two form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#countdown_dashboard{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#d5dff1;
+}
+#countdown_dashboard div p{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    margin-right: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #d5dff1;
+    background-color:rgba(70,176,234,0.5);
+    border-radius: 10px;
+}
+#countdown_dashboard span{
+    font-size: large;
+    margin-right:10px ;
+    align-items: center;
+}
+.card-container{
+    justify-content: center;
+    padding: 30px;
+    min-width: 400px;
+}
+.section-two .btn{
+    width: 82%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 700;
+    border-color:#c3515f;
+    color:#c3515f;
+}
+.btn:hover{
+    color: white;
+    border-width: 3px;
+}
+.title-header{
+    align-self: center;
+}
